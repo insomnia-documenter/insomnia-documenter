@@ -14,7 +14,7 @@ async function app() {
 
   try {
     // eslint-disable-next-line no-undef
-    const json = await fetch(url, {
+    const json = await fetch(window.INSOMNIA_URL, {
       method: 'GET',
       credentials: 'same-origin',
       headers: {
